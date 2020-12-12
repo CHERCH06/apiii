@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SAT">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" Aqui aprenderas sobre el SAT"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnayudasat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:drawableLeft="@android:drawable/ic_menu_info_details"
+                android:text="Ayuda" />
+
+            <Button
+                android:id="@+id/btnsat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textColor="#009688"
+                android:text="¿Que quieren decir las siglas SAT?" />
+
+            <TextView
+                android:id="@+id/lbl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:text="Servicio de administración tributaria" />
+
+            <Button
+                android:id="@+id/btnsat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:background="#ffffff"
+                android:text="¿De que se encarga el SAT?" />
+
+            <TextView
+                android:id="@+id/lbl2"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:text="Recolectar los impuestos en México" />
+
+            <Button
+                android:id="@+id/btnsat3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:background="#ffffff"
+                android:text="¿Que son los impuestos?" />
+
+            <TextView
+                android:id="@+id/lbl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:text="Tributo que dan las personas económicamente activas al estado para mantener en buen desempeño las necesidades colectivas" />
+
+            <Button
+                android:id="@+id/btnsat4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:background="#ffffff"
+                android:text="¿A donde se va lo que recauda el SAT?" />
+
+            <TextView
+                android:id="@+id/lbl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:text="Se destinan para financiar gastos e inversiones como obras públicas y servicios públicos" />
+
+            <Button
+                android:id="@+id/btnsat5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:background="#ffffff"
+                android:text="¿Que tipos de personas existen para el SAT?" />
+
+            <TextView
+                android:id="@+id/lbl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:text="Personas Fisicas y Morales\nFisicas: Individuo con la capacidad de obtener derechos y obligaciones.\n\nMorales: Son un conjunto de personas fisicas que se reunen para cumplir un objetivo." />
+
+
+            <Button
+                android:id="@+id/btnsat6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:background="#ffffff"
+                android:text="¿Cual es el nombre del código de los contribuyentes del SAT?" />
+
+            <TextView
+                android:id="@+id/lbl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="RFC"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp">
+            </Space>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
