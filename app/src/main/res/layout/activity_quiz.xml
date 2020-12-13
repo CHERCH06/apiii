@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbltimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/lblfin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:textSize="25dp"
+                android:textColor="#002F75"
+                android:text="FIN DEL JUEGO" />
+
+            <ImageView
+                android:id="@+id/ivq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                app:srcCompat="@drawable/market" />
+
+            <TextView
+                android:id="@+id/lblquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:text="aqui va la pregunta" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btntrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/check"
+                    android:paddingRight="10dp"
+                    android:text="Verdadero" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp">
+                </Space>
+
+                <Button
+                    android:id="@+id/btnfalse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/tache"
+                    android:paddingLeft="10dp"
+                    android:text="Falso" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblmsjfinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:textSize="25dp"
+                android:text="mensaje final" />
+
+            <Button
+                android:id="@+id/btnrev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revisar respuestas" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
